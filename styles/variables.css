@@ -8,4 +8,9 @@
     --gradient-start: #e7e7e7;
     --gradient-end: #1a1a1a;
     --text-shadow: #ffffff;
+    --button-text-color: var(--background-color);
+    --heart-contour-color: var(--accent-color);
+    --heart-fill-color: #FF0000;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
 }

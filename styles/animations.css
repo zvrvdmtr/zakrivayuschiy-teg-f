@@ -12,3 +12,82 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.like-icon .contour {
+  fill: var(--heart-contour-color);
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-contour-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button .is-liked .core {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button .is-liked .main-body {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button .is-liked .contour {
+  fill: var(--heart-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.card__icon-button .is-liked .heart {
+  animation: heart 0.3s ease-in 0.1s alternate;
+}
+
+.card__icon-button .is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s alternate;
+}
+
+@keyframes heart {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sparks {
+  to {
+    fill: var(--heart-fill-color)
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0deg);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}

@@ -6,9 +6,16 @@
 */
 
 :root.theme-light {
+    --background-image: url("../images/background-light.png");
     --background-color: #ffffff;
     --accent-color: #000000;
-    --background-image: url("../images/background-light.png");
+    --gradient-base: #d3d3d3;
+    --gradient-start: #e7e7e7;
+    --gradient-end: #1a1a1a;
+    --text-shadow: #ffffff;
+    --button-text-color: var(--background-color);
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
 }
 
 :root.theme-dark {
@@ -18,6 +25,10 @@
     --gradient-base: #000;
     --gradient-start: #007f0c;
     --gradient-end: #004306;
+    --text-shadow: #00CC14;
+    --button-text-color: var(--accent-color);
+    --font-weight-bold: 785;
+    --font-weight-regular: 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,5 +39,9 @@
         --gradient-base: #000;
         --gradient-start: #007f0c;
         --gradient-end: #004306;
+        --text-shadow: #00CC14;
+        --button-text-color: var(--accent-color);
+        --font-weight-bold: 785;
+        --font-weight-regular: 465;
     }
   }
